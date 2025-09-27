@@ -6,4 +6,4 @@ Password  : password
 
 Admin
 email     : admin@example.com
-Password  : Admin
+Password  : Admin123
