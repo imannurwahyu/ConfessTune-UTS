@@ -117,8 +117,8 @@
             <div class="contact-avatar">
                 <i class="fas fa-user"></i>
             </div>
-            <h3>Ayang</h3>
-            <p class="contact-role">Lead Developer</p>
+            <h3>Ayang Nova Anggraeni</h3>
+            <p class="contact-role">2310631170126</p>
             <div class="contact-info">
                 <a href="mailto:ayang@confesstune.com">
                     <i class="fas fa-envelope"></i> ayang@confesstune.com
@@ -133,8 +133,8 @@
             <div class="contact-avatar">
                 <i class="fas fa-user"></i>
             </div>
-            <h3>Iman</h3>
-            <p class="contact-role">UI/UX Designer</p>
+            <h3>Iman Nurwahyu</h3>
+            <p class="contact-role">2310631170090</p>
             <div class="contact-info">
                 <a href="mailto:iman@confesstune.com">
                     <i class="fas fa-envelope"></i> iman@confesstune.com
@@ -149,8 +149,8 @@
             <div class="contact-avatar">
                 <i class="fas fa-user"></i>
             </div>
-            <h3>Kevin</h3>
-            <p class="contact-role">Backend Developer</p>
+            <h3>Kevin Victorian</h3>
+            <p class="contact-role">2310631170025</p>
             <div class="contact-info">
                 <a href="mailto:kevin@confesstune.com">
                     <i class="fas fa-envelope"></i> kevin@confesstune.com
