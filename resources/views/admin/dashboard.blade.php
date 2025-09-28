@@ -36,7 +36,7 @@
             <div>Lagu Terkirim</div>
         </div>
         <div style="background: linear-gradient(135deg, var(--accent), var(--primary)); color: white; padding: 1rem; border-radius: 8px; text-align: center;">
-            <div style="font-size: 2rem; font-weight: bold;">{{ \App\Models\User::where('role', 'user')->count() }}</div>
+            <div style="font-size: 2rem; font-weight: bold;">{{ \App\Models\User::where('roles', 'user')->count() }}</div>
             <div>Total User</div>
         </div>
     </div>
@@ -57,7 +57,7 @@
         <div>
             <strong>Role:</strong>
             <span style="background: var(--accent); color: white; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem;">
-                {{ ucfirst(auth()->user()->role) }}
+                {{ ucfirst(auth()->user()->roles) }}
             </span>
         </div>
         <div>

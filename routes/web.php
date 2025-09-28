@@ -20,7 +20,7 @@ use App\Http\Controllers\DashboardController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 // Authentication routes (jika pakai Laravel Breeze/UI)
 require __DIR__ . '/auth.php';
