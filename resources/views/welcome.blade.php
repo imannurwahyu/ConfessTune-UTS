@@ -123,8 +123,8 @@
                 <a href="mailto:ayang@confesstune.com">
                     <i class="fas fa-envelope"></i> ayang@confesstune.com
                 </a>
-                <a href="https://github.com/ayang" target="_blank">
-                    <i class="fab fa-github"></i> @ayang
+                <a href="https://github.com/AyangNovaAnggraeni" target="_blank">
+                    <i class="fab fa-github"></i> @AyangNovaAnggraeni
                 </a>
             </div>
         </div>
