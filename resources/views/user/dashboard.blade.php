@@ -5,7 +5,7 @@
 @section('content')
 <div class="card">
     <div class="welcome-text">
-        <i class="fas fa-user"></i> Selamat datang User, ConfessTune
+        <i class="fas fa-user"></i> Selamat datang {{ auth()->user()->name }}, ConfessTune
         <div style="font-size: 1rem; color: var(--secondary); margin-top: 0.5rem;">
             Halo, {{ auth()->user()->name }}!
         </div>

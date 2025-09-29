@@ -121,7 +121,7 @@
             <p class="contact-role">2310631170126</p>
             <div class="contact-info">
                 <a href="mailto:ayangnovaanggraeni371@gmail.com">
-                    <i class="fas fa-envelope"></i> ayangnovaanggraeni371@gmail.com
+                    <i class="fas fa-envelope"></i> ayangnovaanggraeni@gmail.com
                 </a>
                 <a href="https://github.com/AyangNovaAnggraeni" target="_blank">
                     <i class="fab fa-github"></i> @AyangNovaAnggraeni

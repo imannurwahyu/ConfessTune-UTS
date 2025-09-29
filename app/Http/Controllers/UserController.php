@@ -35,4 +35,29 @@ class UserController extends Controller
 
         return redirect()->route('user.dashboard')->with('success', 'Lagu berhasil dikirim!');
     }
+
+    public function store(Request $request)
+    {
+        $validated = $request->validate([
+            'to' => 'required|string|max:255',
+            'lagu_id' => 'required|exists:lagus,id',
+            'pesan' => 'required|string',
+        ]);
+
+        $kirim = KirimLagu::create($validated);
+
+        // edirect ke halaman show
+        return redirect()->route('user.kirim.show', $kirim->id)
+            ->with('success', 'Lagu berhasil dikirim!');
+    }
+
+
+    public function showKirim($id)
+    {
+        // ambil data kiriman beserta lagunya
+        $kirim = KirimLagu::with('lagu')->findOrFail($id);
+
+        // lempar ke view
+        return view('user.show', compact('kirim'));
+    }
 }
