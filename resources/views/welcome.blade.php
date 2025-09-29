@@ -120,11 +120,11 @@
             <h3>Ayang Nova Anggraeni</h3>
             <p class="contact-role">2310631170126</p>
             <div class="contact-info">
-                <a href="mailto:ayang@confesstune.com">
-                    <i class="fas fa-envelope"></i> ayang@confesstune.com
+                <a href="mailto:ayangnovaanggraeni371@gmail.com">
+                    <i class="fas fa-envelope"></i> ayangnovaanggraeni371@gmail.com
                 </a>
-                <a href="https://github.com/ayang" target="_blank">
-                    <i class="fab fa-github"></i> @ayang
+                <a href="https://github.com/AyangNovaAnggraeni" target="_blank">
+                    <i class="fab fa-github"></i> @AyangNovaAnggraeni
                 </a>
             </div>
         </div>
@@ -136,11 +136,11 @@
             <h3>Iman Nurwahyu</h3>
             <p class="contact-role">2310631170090</p>
             <div class="contact-info">
-                <a href="mailto:iman@confesstune.com">
-                    <i class="fas fa-envelope"></i> iman@confesstune.com
+                <a href="mailto:workiman001@gmail.com">
+                    <i class="fas fa-envelope"></i> workiman001@gmail.com
                 </a>
-                <a href="https://github.com/iman" target="_blank">
-                    <i class="fab fa-github"></i> @iman
+                <a href="https://github.com/imannurwahyu" target="_blank">
+                    <i class="fab fa-github"></i> @imannurwahyu
                 </a>
             </div>
         </div>
@@ -152,11 +152,11 @@
             <h3>Kevin Victorian</h3>
             <p class="contact-role">2310631170025</p>
             <div class="contact-info">
-                <a href="mailto:kevin@confesstune.com">
-                    <i class="fas fa-envelope"></i> kevin@confesstune.com
+                <a href="mailto:kevinpohan11@gmail.com">
+                    <i class="fas fa-envelope"></i> kevinpohan11@gmail.com
                 </a>
-                <a href="https://github.com/kevin" target="_blank">
-                    <i class="fab fa-github"></i> @kevin
+                <a href="https://github.com/kevinpohan" target="_blank">
+                    <i class="fab fa-github"></i> @kevinpohan
                 </a>
             </div>
         </div>

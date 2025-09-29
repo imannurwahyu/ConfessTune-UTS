@@ -22,19 +22,11 @@ Route::get('/', function () {
     return view('welcome');
 })->name('welcome');
 
-// Authentication routes (jika pakai Laravel Breeze/UI)
+// Authentication routes
 require __DIR__ . '/auth.php';
 
-// Route debugging
-Route::get('/debug-auth', function () {
-    return [
-        'authenticated' => auth()->check(),
-        'user' => auth()->user(),
-        'session' => session()->all()
-    ];
-});
 
-// Dashboard redirect (hanya untuk user yang sudah login)
+// Dashboard redirect 
 Route::get('/dashboard', function () {
     if (!auth()->check()) {
         return redirect('/login');
@@ -48,21 +40,21 @@ Route::get('/dashboard', function () {
     }
 })->middleware('auth')->name('dashboard');
 
-// User Routes (TANPA middleware role dulu)
-Route::middleware(['auth'])->group(function () {
+// User Routes 
+Route::middleware(['user.role'])->group(function () {
     Route::get('/user', [UserController::class, 'dashboard'])->name('user.dashboard');
     Route::get('/user/kirim', [UserController::class, 'formKirim'])->name('user.kirim');
     Route::post('/user/kirim', [UserController::class, 'kirimLagu'])->name('user.kirim.store');
 });
 
-// Admin Routes (TANPA middleware role dulu)
-Route::middleware(['auth'])->group(function () {
+// Admin Routes 
+Route::middleware(['admin.role'])->group(function () {
     Route::get('/admin', [AdminController::class, 'dashboard'])->name('admin.dashboard');
     Route::get('/admin/tambah-lagu', [AdminController::class, 'formTambah'])->name('admin.tambah');
     Route::post('/admin/tambah-lagu', [AdminController::class, 'tambahLagu'])->name('admin.tambah.store');
 });
 
-// Profile routes (biasanya sudah ada jika pakai Breeze)
+// Profile routes 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
