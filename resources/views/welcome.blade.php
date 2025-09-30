@@ -121,7 +121,11 @@
             <p class="contact-role">2310631170126</p>
             <div class="contact-info">
                 <a href="mailto:ayangnovaanggraeni371@gmail.com">
+
+               
+
                     <i class="fas fa-envelope"></i> ayangnovaanggraeni371@gmail.com
+
                 </a>
                 <a href="https://github.com/AyangNovaAnggraeni" target="_blank">
                     <i class="fab fa-github"></i> @AyangNovaAnggraeni
@@ -140,7 +144,11 @@
                     <i class="fas fa-envelope"></i> workiman001@gmail.com
                 </a>
                 <a href="https://github.com/imannurwahyu" target="_blank">
+
+                   
+
                     <i class="fab fa-github"></i> @imannurwahyu
+
                 </a>
             </div>
         </div>
@@ -156,7 +164,11 @@
                     <i class="fas fa-envelope"></i> kevinpohan11@gmail.com
                 </a>
                 <a href="https://github.com/kevinpohan" target="_blank">
+
+                   
+
                     <i class="fab fa-github"></i> @kevinpohan
+
                 </a>
             </div>
         </div>
