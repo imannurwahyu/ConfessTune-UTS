@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Sep 27, 2025 at 04:55 PM
+-- Generation Time: Sep 29, 2025 at 04:54 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -57,7 +57,8 @@ CREATE TABLE `kirim_lagu` (
 --
 
 INSERT INTO `kirim_lagu` (`id`, `to`, `lagu_id`, `pesan`, `created_at`, `updated_at`) VALUES
-(1, 'E', 1, 'da', '2025-09-27 09:01:35', '2025-09-27 09:01:35');
+(1, 'E', 1, 'da', '2025-09-27 09:01:35', '2025-09-27 09:01:35'),
+(2, 'tr', 4, 'daedae', '2025-09-27 20:44:55', '2025-09-27 20:44:55');
 
 -- --------------------------------------------------------
 
@@ -155,16 +156,16 @@ CREATE TABLE `users` (
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
-  `roles` enum('admin','user') COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'user'
+  `role` enum('admin','user') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'user'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `roles`) VALUES
-(1, 'Test User', 'test@example.com', '2025-09-27 05:59:20', '$2y$12$gjcfZVS2bD0kjMDIlVcWEeeFuZj3zru1NO9YMccQlK5OKENiTzMOO', 'ah8iBtxTzXeoxqqrc0meSF9uw6tDSl96RtjcgALT8bM3dQQWjiuHpBXkh8qT', '2025-09-27 05:59:20', '2025-09-27 05:59:20', 'user'),
-(5, 'Admin', 'admin@example.com', '2025-09-27 06:28:18', '$2y$12$GB/8R9Mqt4EMeYTdi9lEkuOAhPeSPvz0B8CIS83akiiO9jsf/dmiS', 'YRb0dFkHDZSFdbBw2rArTtb9o5nIx2TR08oqlekVxtiLJjyH3AqGpZs1jowh', '2025-09-27 06:28:18', '2025-09-27 06:28:18', 'admin');
+INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `role`) VALUES
+(1, 'Test User', 'test@example.com', '2025-09-27 05:59:20', '$2y$12$gjcfZVS2bD0kjMDIlVcWEeeFuZj3zru1NO9YMccQlK5OKENiTzMOO', 'G2S6GBCiJs2VvBZ4Q2PlBcO2e6VB68mWqee9G0rce5u7eJTMzGX9ImdLlvOS', '2025-09-27 05:59:20', '2025-09-27 05:59:20', 'user'),
+(5, 'Admin', 'admin@example.com', '2025-09-27 06:28:18', '$2y$12$GB/8R9Mqt4EMeYTdi9lEkuOAhPeSPvz0B8CIS83akiiO9jsf/dmiS', 'NPlXZZFYH2bbzIIkgXIa6PRohxJbMqu1l33rFKOzDOt3CN3JFeSc7OGSkw30', '2025-09-27 06:28:18', '2025-09-27 06:28:18', 'admin');
 
 --
 -- Indexes for dumped tables
@@ -231,7 +232,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `kirim_lagu`
 --
 ALTER TABLE `kirim_lagu`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `lagu`

@@ -36,7 +36,7 @@
         <div>
             <strong>Role:</strong>
             <span style="background: var(--primary); color: white; padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem;">
-                {{ ucfirst(auth()->user()->roles) }}
+                {{ ucfirst(auth()->user()->role) }}
             </span>
         </div>
         <div>
